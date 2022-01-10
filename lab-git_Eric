@@ -1,0 +1,159 @@
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~
+$ git clone https://github.com/ebourelly/IronEric.git
+Cloning into 'IronEric'...
+warning: You appear to have cloned an empty repository.
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~
+$ cd IronEric
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ touch about.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ echo I used to have a rat named Tatouille > about.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ echo that was before the Disney movie came out > about.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ vi about.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git add .
+warning: LF will be replaced by CRLF in about.txt.
+The file will have its original line endings in your working directory
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git commit 'this should be step 6'
+error: pathspec 'this should be step 6' did not match any file(s) known to git
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git commit -m 'this should be step 6'
+[main (root-commit) ca198aa] this should be step 6
+ 1 file changed, 2 insertions(+)
+ create mode 100644 about.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git push origin master 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
+error: src refspec master does not match any
+error: src refspec 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 does not match any
+error: failed to push some refs to 'https://github.com/ebourelly/IronEric.git'
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git remote add origin https://github.com/ebourelly/IronEric.git
+error: remote origin already exists.
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git push origin 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
+error: src refspec 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 does not match any
+error: failed to push some refs to 'https://github.com/ebourelly/IronEric.git'
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git push origin 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
+error: src refspec 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 does not match any
+error: failed to push some refs to 'https://github.com/ebourelly/IronEric.git'
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git push -u origin master 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
+error: src refspec master does not match any
+error: src refspec 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 does not match any
+error: failed to push some refs to 'https://github.com/ebourelly/IronEric.git'
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/ebourelly/IronEric.git'
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git push origin master 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
+error: src refspec master does not match any
+error: src refspec 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 does not match any
+error: failed to push some refs to 'https://github.com/ebourelly/IronEric.git'
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git push https://gitub.com/ebourelly/IronEric.git
+fatal: unable to access 'https://gitub.com/ebourelly/IronEric.git/': SSL: no alternative certificate subject name matches target host name 'gitub.com'
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git push https://github.com/ebourelly/IronEric.git
+remote: Permission to ebourelly/IronEric.git denied to ebourelly.
+fatal: unable to access 'https://github.com/ebourelly/IronEric.git/': The requested URL returned error: 403
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git push https://ebourelly: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@github.com/ebourelly/IronEric.git
+remote: Permission to ebourelly/IronEric.git denied to ebourelly.
+fatal: unable to access 'https://github.com/ebourelly/IronEric.git/': The requested URL returned error: 403
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ git push https://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@github.com/ebourelly/IronEric
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ebourelly/IronEric
+ * [new branch]      main -> main
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/IronEric (main)
+$ cd ..
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~
+$ git clone https://github.com/ebourelly/IronTom.git
+Cloning into 'IronTom'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~
+$ git checkout -b classmate
+fatal: not a git repository (or any of the parent directories): .git
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~
+$ cd irontom
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/irontom (main)
+$ git checkout -b classmate
+Switched to a new branch 'classmate'
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/irontom (classmate)
+$ echo "I enrolled Ironhack's Data Analytics bootcamp because I wanted to go further than Excel to exploit data" > eric.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/irontom (classmate)
+$ ls
+about.txt  eric.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/irontom (classmate)
+$ dit add .
+bash: dit: command not found
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/irontom (classmate)
+$ git add .
+warning: LF will be replaced by CRLF in eric.txt.
+The file will have its original line endings in your working directory
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/irontom (classmate)
+$ git commit -m 'classmate branch and txt file done'
+[classmate 33bc400] classmate branch and txt file done
+ 1 file changed, 1 insertion(+)
+ create mode 100644 eric.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/irontom (classmate)
+$ git push https://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@github.com/ebourelly/IronTom
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 370 bytes | 370.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'classmate' on GitHub by visiting:
+remote:      https://github.com/ebourelly/IronTom/pull/new/classmate
+remote:
+To https://github.com/ebourelly/IronTom
+ * [new branch]      classmate -> classmate
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/irontom (classmate)
+$
